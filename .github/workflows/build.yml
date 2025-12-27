@@ -1,13 +1,7 @@
 name: Build and Package .NET 8 App with Native AOT (Windows x64)
 
 on:
-  # Trigger conditions: Run when code is pushed to the main branch or a PR is created for the main branch
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
